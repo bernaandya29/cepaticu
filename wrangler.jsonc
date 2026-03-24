@@ -1,0 +1,21 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "cepaticu",
+  "main": "_worker.js",
+  "compatibility_date": "2025-09-27",
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": ".",
+    "binding": "ASSETS",
+    "run_worker_first": true
+  },
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "vars": {
+    "ALLOWED_ORIGINS": "https://cepat.icu,https://www.cepat.icu",
+    "APP_GAS_URL": "https://script.google.com/macros/s/AKfycbyBLRi8MpnA65br7lREvx4rDoDp91je-A6Eqm9odXIrU5sLyrppd4QYtW58PeJSpnlnCg/exec"
+  }
+}
